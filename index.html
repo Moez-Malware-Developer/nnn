@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <title>الأبحاث الزراعية</title>
+    <style>
+
+       
+       
+        .navbar {
+            background-color: #FFF !important;
+            border: none;
+            box-shadow: none;
+            flex-direction: row;
+        }
+        .navbar-nav {
+            flex-direction: row;
+            background-color: #FFF;
+            white-space: nowrap; 
+        }
+        .nav-item {
+            margin: 0 5px;
+            margin-right: 25px;
+        }
+        .navbar-brand img {
+            width: 300px;
+            height: auto;
+        }
+        .fa-globe {
+            color: #208f18;
+        }
+        .nav-link:hover {
+            position: relative;
+            color: #208f18;
+        }
+        .nav-link:hover::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 2px;
+            background-color: #208f18;
+            transition: width 0.3s;
+        }
+        .language-icon .dropdown-menu {
+            left: 200px;
+            right: auto;
+            margin-top: 0.25rem;
+        }
+    
+    
+</style>
+
+    </style>
+</head>
+<body class="bg-green-50">
+    <nav class="navbar navbar-expand-lg navbar-light bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="./img/h.jpg" alt="Logo" style="width: 250px; height: auto;">
+          </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+            <div class="offcanvas-header">
+              <h5 class="offcanvas-title" id="offcanvasNavbarLabel">القائمة الرئيسية</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+            </div>
+            <div class="offcanvas-body">
+              <ul class="navbar-nav mx-auto mb-2 mb-lg-0 d-flex flex-column flex-lg-row justify-content-center">
+                <li class="nav-item">
+                  <a class="nav-link active d-lg-none border-bottom " href="#">الرئيسية</a>
+                  <a class="nav-link active d-none d-lg-block" href="#" style="margin-top: 10px;">الرئيسية</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none border-bottom" href="#">عن المركز</a>
+                  <a class="nav-link d-none d-lg-block" href="#" style="margin-top: 10px;">عن المركز</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none border-bottom" href="#">خدماتنا</a>
+                  <a class="nav-link d-none d-lg-block" href="#" style="margin-top: 10px;">خدماتنا</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none border-bottom" href="#">أخبار</a>
+                  <a class="nav-link d-none d-lg-block" href="#"style="margin-top: 10px;">أخبار</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none border-bottom" href="#">أبحاث</a>
+                  <a class="nav-link d-none d-lg-block" href="#"style="margin-top: 10px;">أبحاث</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link d-lg-none border-bottom" href="#">تواصل معنا</a>
+                  <a class="nav-link d-none d-lg-block" href="#"style="margin-top: 10px;">تواصل معنا</a>
+                </li>
+              </ul>
+              <form class="d-flex mt-3" role="search">
+                <input class="form-control me-2" type="search" placeholder="بحث" aria-label="بحث" style="width: 200px;">
+                <button class="btn btn-outline-success" type="submit">بحث</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </nav>
+      
+      
+      
+      
+      
+      <div id="carouselExampleCaptions" class="carousel slide" style="max-height: 600px; overflow: hidden;">
+        <div class="carousel-indicators custom-indicators">
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/1..jpg" class="d-block w-100" alt="Slide 1"style="height: 600px; object-fit: cover;">
+            <div class="carousel-caption">
+              <h5 id="carousel-title-1">تطوير التكنولوجيا الزراعية</h5>
+              <p id="carousel-text-1">أبحاث جديدة لتحسين كفاءة الإنتاج الزراعي باستخدام أحدث التقنيات.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1..jpg" class="d-block w-100" alt="Slide 2" style="height: 500px; object-fit: cover;">
+            <div class="carousel-caption">
+              <h5 id="carousel-title-2">الحفاظ على الموارد الطبيعية</h5>
+              <p id="carousel-text-2">دراسات مستمرة لحماية البيئة وضمان استدامة الموارد الزراعية.</p>
+            </div>
+          </div>
+          <div class="carousel-item">
+            <img src="./img/1..jpg" class="d-block w-100" alt="Slide 3" style="height: 600px; object-fit: cover;">
+            <div class="carousel-caption">
+              <h5 id="carousel-title-3">زيادة الإنتاجية والجودة</h5>
+              <p id="carousel-text-3">بحوث علمية لزيادة الإنتاجية وجودة المحاصيل الزراعية لمواكبة الاحتياجات العالمية.</p>
+            </div>
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+<style>
+    /* ضبط حجم النص والصورة */
+.carousel-caption h5 {
+    font-size: 1.8rem;
+    font-weight: bold;
+}
+
+.carousel-caption p {
+    font-size: 1.2rem;
+}
+
+/* وسائط الإعلام لضبط النص على الهواتف */
+@media (max-width: 768px) {
+    .carousel-caption h5 {
+        font-size: 1.4rem;
+    }
+    .carousel-caption p {
+        font-size: 1rem;
+    }
+    .carousel-caption {
+       /* خلفية نصف شفافة لتعزيز وضوح النص */
+        padding: 10px;
+    }
+}
+</style>    
+<section class="container mx-auto px-4 py-12">
+    <div class="flex flex-col md:flex-row-reverse items-center">
+        <!-- القسم الذي يحتوي على الصورة -->
+        <div class="w-full md:w-1/2 mb-6 md:mb-0 md:pr-8">
+            <img src="img/icon/icon-big.png" alt="صورة توضيحية" class="w-full h-auto rounded-lg object-cover">
+        </div>
+        
+        <!-- القسم الذي يحتوي على النص -->
+        <div class="w-full md:w-1/2 text-right p-4">
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">عن المركز</h1>
+            <p class="text-gray-600 text-lg md:text-2xl leading-relaxed mb-6">
+                "أُعدَّ مركز البحوث الزراعية والحيوانية كأحد أقدم الفِعاليات العلمية في ليبيا، حيث أُسس 
+                <br>
+                كمؤسسة حكومية ذات صفة اعتبارية وفقًا للقانون رقم 109 لعام 1971. يعمل المركز من خلال
+                <br>
+                ثلاث تخصصات رئيسية تغطي جميع مناطق ليبيا، بالإضافة إلى حوالي 11 محطة بحثية تابعة له.
+                <br>
+                انضم إلينا في رحلتنا نحو مستقبل زراعي أفضل!"
+            </p>
+            <button class="bg-green-600 w-full md:w-44 h-16 text-xl text-white px-6 py-2 rounded-full hover:bg-green-700">
+                عرض المزيد
+            </button>
+        </div>
+    </div>
+    <!-- صورة الأيقونة الصغيرة -->
+    <div class="flex justify-center md:justify-end mt-8">
+        <img src="img/icon/icon.png" alt="icon" class="w-16 h-16 md:relative md:top-80 md:right-24">
+    </div>
+</section>
+
+<section class="container flex flex-col mx-auto justify-between items-center px-4 py-12">
+    <div class="relative mt-36 mb-8 text-center md:text-right">
+        <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-4">أخبار</h1>
+        <p class="text-gray-600 text-lg md:text-2xl leading-relaxed">
+            فى هذا القسم سيتم نشر أخبار المركز
+        </p>
+    </div>
+
+    <!-- العنصر الأول -->
+    <div class="flex flex-col md:flex-row-reverse my-8 justify-between rounded-3xl border border-[#00A991] bg-gradient-to-l from-white to-[#B0E4DD4D]">
+        <!-- صورة -->
+        <div class="w-full md:w-1/2">
+            <img src="img/imges/img-1.png" alt="صورة توضيحية" class="w-full h-auto rounded-lg shadow-md object-cover mx-auto md:mx-0 p-4">
+        </div>
+        <!-- نص -->
+        <div class="w-full md:w-1/2 text-center md:text-right p-4">
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">هذا النص</h1>
+            <p class="text-gray-600 text-lg md:text-2xl leading-relaxed mb-6">
+                "أُعدَّ مركز البحوث الزراعية والحيوانية كأحد أقدم الفِعاليات العلمية في ليبيا، حيث أُسس 
+                كمؤسسة حكومية ذات صفة اعتبارية وفقًا للقانون رقم 109 لعام 1971. يعمل المركز من خلال
+                ثلاث تخصصات رئيسية تغطي جميع مناطق ليبيا، بالإضافة إلى حوالي 11 محطة بحثية تابعة له.
+                انضم إلينا في رحلتنا نحو مستقبل زراعي أفضل!"
+            </p>
+            <button class="bg-green-600 w-full md:w-44 h-12 md:h-16 text-lg md:text-xl text-white px-4 py-2 rounded-full hover:bg-green-700">
+                مشاهدة
+            </button>
+        </div>
+    </div>
+
+    <!-- العنصر الثاني -->
+    <div class="flex flex-col md:flex-row my-8 justify-between rounded-3xl border border-[#00A991] bg-gradient-to-r from-[#B0E4DD4D] to-white">
+        <!-- نص -->
+        <div class="w-full md:w-1/2 text-center md:text-right p-4">
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">هذا النص</h1>
+            <p class="text-gray-600 text-lg md:text-2xl leading-relaxed mb-6">
+                "أُعدَّ مركز البحوث الزراعية والحيوانية كأحد أقدم الفِعاليات العلمية في ليبيا، حيث أُسس 
+                كمؤسسة حكومية ذات صفة اعتبارية وفقًا للقانون رقم 109 لعام 1971. يعمل المركز من خلال
+                ثلاث تخصصات رئيسية تغطي جميع مناطق ليبيا، بالإضافة إلى حوالي 11 محطة بحثية تابعة له.
+                انضم إلينا في رحلتنا نحو مستقبل زراعي أفضل!"
+            </p>
+            <button class="bg-green-600 w-full md:w-44 h-12 md:h-16 text-lg md:text-xl text-white px-4 py-2 rounded-full hover:bg-green-700">
+                مشاهدة
+            </button>
+        </div>
+        <!-- صورة -->
+        <div class="w-full md:w-1/2">
+            <img src="img/imges/img-1.png" alt="صورة توضيحية" class="w-full h-auto rounded-lg shadow-md object-cover mx-auto md:mx-0 p-4">
+        </div>
+    </div>
+
+    <!-- العنصر الثالث -->
+    <div class="flex flex-col md:flex-row-reverse my-8 justify-between rounded-3xl border border-[#00A991] bg-gradient-to-l from-white to-[#B0E4DD4D]">
+        <!-- صورة -->
+        <div class="w-full md:w-1/2">
+            <img src="img/imges/img-1.png" alt="صورة توضيحية" class="w-full h-auto rounded-lg shadow-md object-cover mx-auto md:mx-0 p-4">
+        </div>
+        <!-- نص -->
+        <div class="w-full md:w-1/2 text-center md:text-right p-4">
+            <h1 class="text-3xl md:text-5xl font-bold text-gray-800 mb-4">هذا النص</h1>
+            <p class="text-gray-600 text-lg md:text-2xl leading-relaxed mb-6">
+                "أُعدَّ مركز البحوث الزراعية والحيوانية كأحد أقدم الفِعاليات العلمية في ليبيا، حيث أُسس 
+                كمؤسسة حكومية ذات صفة اعتبارية وفقًا للقانون رقم 109 لعام 1971. يعمل المركز من خلال
+                ثلاث تخصصات رئيسية تغطي جميع مناطق ليبيا، بالإضافة إلى حوالي 11 محطة بحثية تابعة له.
+                انضم إلينا في رحلتنا نحو مستقبل زراعي أفضل!"
+            </p>
+            <button class="bg-green-600 w-full md:w-44 h-12 md:h-16 text-lg md:text-xl text-white px-4 py-2 rounded-full hover:bg-green-700">
+                مشاهدة
+            </button>
+        </div>
+    </div>
+    <div class="flex justify-center">
+        <button class="bg-green-600 w-44 h-16 text-xl text-white px-6 py-2 rounded-full hover:bg-green-700">
+            <a href="#" class="flex items-center justify-center w-full h-full">عرض المزيد</a>
+        </button>
+    </div>
+    
+</section>
+
+    
+    <hr class="my-4">
+    <section class="flex container mx-auto w-full items-center justify-around py-8 mt-12 mx-5 custom-bg rounded-xl">
+        <div class="flex flex-col items-center space-y-2">
+            <img src="img/icon/الأفرع.png" alt="الأفرع" class="w-16 h-16">
+            <h2 class="text-xl font-semibold text-gray-700">الأفرع</h2>
+            <p class="text-lg font-bold text-green-500">13</p>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+            <img src="img/icon/البحوث.png" alt="الوظفين" class="w-16 h-16">
+            <h2 class="text-xl font-semibold text-gray-700">الوظفين</h2>
+            <p class="text-lg font-bold text-green-500">719</p>
+        </div>
+        <div class="flex flex-col items-center space-y-2">
+            <img src="img/icon/الوظفين.png" alt="البحوث" class="w-16 h-16">
+            <h2 class="text-xl font-semibold text-gray-700">البحوث</h2>
+            <p class="text-lg font-bold text-green-500">14</p>
+        </div>
+    </section>
+   
+    <section>
+        <section class="container mx-auto p-8">
+            <h1 class="text-3xl font-bold mb-6 text-center">الأبحاث</h1>
+            <div class="space-y-6">
+                <div class="flex flex-col md:flex-row h-auto md:h-96 gap-5">
+                    <!-- الصندوق الأيسر -->
+                    <div class="flex flex-col w-full md:w-1/2 p-6 custom-box-left m-2 bg-gray-100 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-semibold mb-2">هذا النص</h2>
+                        <p>أُعدَّ مركز البحوث الزراعية والحيوانية كأحد أقدم الفِعاليات العلمية في ليبيا، حيث أُسس كمؤسسة حكومية ذات صفة اعتبارية وفقًا للقانون رقم 109 لعام 1971. يعمل المركز من خلال ثلاث تخصصات رئيسية تغطي جميع مناطق ليبيا، بالإضافة إلى حوالي 11 محطة بحثية تابعة له. انضم إلينا في رحلتنا نحو مستقبل زراعي أفضل!</p>
+                        <a href="#" class="text-blue-600 mt-auto">قراءة المزيد</a>
+                    </div>
+                    <!-- الصندوق الأيمن -->
+                    <div class="flex flex-col w-full md:w-1/2 p-6 custom-box-right m-2 bg-gray-100 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-semibold mb-2">هذا النص</h2>
+                        <p>أُعدَّ مركز البحوث الزراعية والحيوانية كأحد أقدم الفِعاليات العلمية في ليبيا، حيث أُسس كمؤسسة حكومية ذات صفة اعتبارية وفقًا للقانون رقم 109 لعام 1971. يعمل المركز من خلال ثلاث تخصصات رئيسية تغطي جميع مناطق ليبيا، بالإضافة إلى حوالي 11 محطة بحثية تابعة له. انضم إلينا في رحلتنا نحو مستقبل زراعي أفضل!</p>
+                        <a href="#" class="text-blue-600 mt-auto">قراءة المزيد</a>
+                    </div>
+                </div>
+                
+                <div class="flex flex-col md:flex-row h-auto md:h-96 gap-5">
+                    <!-- الصندوق الأيسر -->
+                    <div class="flex flex-col w-full md:w-1/2 p-6 custom-box-left m-2 bg-gray-100 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-semibold mb-2">هذا النص</h2>
+                        <p>أُعدَّ مركز البحوث الزراعية والحيوانية كأحد أقدم الفِعاليات العلمية في ليبيا، حيث أُسس كمؤسسة حكومية ذات صفة اعتبارية وفقًا للقانون رقم 109 لعام 1971. يعمل المركز من خلال ثلاث تخصصات رئيسية تغطي جميع مناطق ليبيا، بالإضافة إلى حوالي 11 محطة بحثية تابعة له. انضم إلينا في رحلتنا نحو مستقبل زراعي أفضل!</p>
+                        <a href="#" class="text-blue-600 mt-auto">قراءة المزيد</a>
+                    </div>
+                    <!-- الصندوق الأيمن -->
+                    <div class="flex flex-col w-full md:w-1/2 p-6 custom-box-right m-2 bg-gray-100 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-semibold mb-2">هذا النص</h2>
+                        <p>أُعدَّ مركز البحوث الزراعية والحيوانية كأحد أقدم الفِعاليات العلمية في ليبيا، حيث أُسس كمؤسسة حكومية ذات صفة اعتبارية وفقًا للقانون رقم 109 لعام 1971. يعمل المركز من خلال ثلاث تخصصات رئيسية تغطي جميع مناطق ليبيا، بالإضافة إلى حوالي 11 محطة بحثية تابعة له. انضم إلينا في رحلتنا نحو مستقبل زراعي أفضل!</p>
+                        <a href="#" class="text-blue-600 mt-auto">قراءة المزيد</a>
+                    </div>
+                </div>
+                <div class="flex flex-col md:flex-row h-auto md:h-96 gap-5">
+                    <!-- الصندوق الأيسر -->
+                    <div class="flex flex-col w-full md:w-1/2 p-6 custom-box-left m-2 bg-gray-100 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-semibold mb-2">هذا النص</h2>
+                        <p>أُعدَّ مركز البحوث الزراعية والحيوانية كأحد أقدم الفِعاليات العلمية في ليبيا، حيث أُسس كمؤسسة حكومية ذات صفة اعتبارية وفقًا للقانون رقم 109 لعام 1971. يعمل المركز من خلال ثلاث تخصصات رئيسية تغطي جميع مناطق ليبيا، بالإضافة إلى حوالي 11 محطة بحثية تابعة له. انضم إلينا في رحلتنا نحو مستقبل زراعي أفضل!</p>
+                        <a href="#" class="text-blue-600 mt-auto">قراءة المزيد</a>
+                    </div>
+                    <!-- الصندوق الأيمن -->
+                    <div class="flex flex-col w-full md:w-1/2 p-6 custom-box-right m-2 bg-gray-100 rounded-lg shadow-lg">
+                        <h2 class="text-xl font-semibold mb-2">هذا النص</h2>
+                        <p>أُعدَّ مركز البحوث الزراعية والحيوانية كأحد أقدم الفِعاليات العلمية في ليبيا، حيث أُسس كمؤسسة حكومية ذات صفة اعتبارية وفقًا للقانون رقم 109 لعام 1971. يعمل المركز من خلال ثلاث تخصصات رئيسية تغطي جميع مناطق ليبيا، بالإضافة إلى حوالي 11 محطة بحثية تابعة له. انضم إلينا في رحلتنا نحو مستقبل زراعي أفضل!</p>
+                        <a href="#" class="text-blue-600 mt-auto">قراءة المزيد</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </section>
+    <div class="flex justify-center mt-8">
+        <button class="bg-green-600 w-44 h-16 text-xl text-white px-6 py-2 rounded-full hover:bg-green-700">
+            <a href="#" class="flex items-center justify-center w-full h-full">عرض المزيد</a>
+        </button>
+    </div>
+    
+   
+    
+    <footer class="w-[100%] bg-gray-100 py-4 mt-6">
+        <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between text-gray-700">
+            <!-- حقوق النشر -->
+            <div class="mb-2 md:mb-0 text-center md:text-right">
+                <p>© 2024 مركز الأبحاث الزراعية - جميع الحقوق محفوظة</p>
+            </div>
+            
+            <!-- مواقع التواصل -->
+            <div class="flex items-center justify-center md:justify-end space-x-4 md:space-x-8">
+                <a href="#">
+                    <img src="img/icon/Facebook.png" alt="Facebook" class="h-6 w-6">
+                </a>
+                <a href="#">
+                    <img src="img/icon/Twitter.png" alt="Twitter" class="h-6 w-6">
+                </a>
+                <a href="#">
+                    <img src="img/icon/instgram.png" alt="Instagram" class="h-6 w-6">
+                </a>
+                <a href="#">
+                    <img src="img/icon/Website.png" alt="Website" class="h-6 w-6">
+                </a>
+            </div>
+            
+            <!-- البرمجة -->
+            <div class="mt-2 md:mt-0 text-center md:text-left">
+                <p>تمت البرمجة من قبل معز جلال | <a href="https://wa.me/yourwhatsappnumber" class="text-blue-500 hover:underline">للتواصل عبر واتساب</a></p>
+            </div>
+        </div>
+    </footer>
+    
+        <style>.custom-box-right {
+        background: linear-gradient(270deg, white 0%, rgba(176, 228, 221, 0.30) 100%);
+        border-radius: 30px;
+        border: 1px solid #00A991;
+    }
+    
+    .custom-box-left {
+        background: linear-gradient(270deg, rgba(176, 228, 221, 0.30) 0%, white 100%);
+        border-radius: 30px;
+        border: 1px solid #00A991;
+    }
+    
+    .flex {
+        gap: 20px; 
+    }
+    
+    .m-2 {
+        margin: 20px; 
+    }
+    .custom-bg {
+    width: 100%;
+    height: 300px;
+    background: linear-gradient(180deg, rgba(176, 228, 221, 0.50) 0%, rgba(176, 228, 221, 0.15) 100%);
+    border-radius: 15px;
+    margin-top: 50px;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+</style>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
